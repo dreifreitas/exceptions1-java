@@ -35,7 +35,13 @@ public class Program {
 			System.out.print("Check-out date (dd/MM/yyyy): ");
 			checkout = sdf.parse(sc.next());
 
-			System.out.println( reservation.updateDates(checkin, checkout));
+			String error = reservation.updateDates(checkin, checkout);
+			if(error != null) {
+				System.out.println(error);
+			}
+			else {
+				System.out.println("Reservation: " + reservation);
+			}
 			
 			
 		}

@@ -58,7 +58,7 @@ public class Reservation {
 		}
 		this.checkIn = checkIn;
 		this.checkOut = checkOut;
-		return "Reservation updated: " + toString();
+		return null;
 	}
 
 	@Override
